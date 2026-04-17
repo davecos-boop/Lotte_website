@@ -1,20 +1,27 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #f7f9f9;
-  color: #333;
+  background-color: #f2ede7;
+  color: #2a2a2a;
+}
+
+/* GLOBAL IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(to bottom, #dfecec, #f7f9f9);
+  background-color: #ddd4c8;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
+  font-size: 42px;
+  font-weight: 500;
   margin-bottom: 10px;
-  font-size: 36px;
 }
 
 .hero p {
@@ -22,41 +29,123 @@ body {
   margin-bottom: 20px;
 }
 
+/* HERO IMAGE */
+.hero img {
+  width: 350px;
+  max-width: 80%;
+  display: block;
+  margin: 25px auto;
+  border-radius: 12px;
+}
+
 /* BUTTON */
 .button {
   display: inline-block;
-  padding: 12px 25px;
-  background-color: #2f4f4f;
+  padding: 12px 30px;
+  background-color: #2a2a2a;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  transition: 0.2s;
 }
 
-/* NAV */
+.button:hover {
+  background-color: #444;
+}
+
+/* NAVIGATION */
 nav {
   text-align: center;
   padding: 15px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  background: #f2ede7;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #2f4f4f;
-  font-weight: bold;
+  color: #2a2a2a;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ACTIVE PAGE */
+nav a.active {
+  text-decoration: underline;
 }
 
 /* SECTIONS */
 section {
   max-width: 800px;
-  margin: 60px auto;
+  margin: 80px auto;
   padding: 0 20px;
 }
 
-/* CONTACT BOX */
+h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* ABOUT IMAGE */
+#about img {
+  width: 260px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
+/* SERVICES GRID */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.service-box {
+  background: #ddd4c8;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1 1 220px;
+  transition: 0.2s;
+}
+
+.service-box:hover {
+  background: #d2c6b8;
+}
+
+.service-box h3 {
+  margin-top: 0;
+}
+
+/* CONTACT */
 #contact {
-  background: #eef5f5;
+  background: #ddd4c8;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
+}
+
+/* SUB HEADER */
+.sub-hero {
+  background-color: #ddd4c8;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sub-hero h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #ddd4c8;
+  margin-top: 50px;
+  font-size: 14px;
 }
