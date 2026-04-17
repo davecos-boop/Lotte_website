@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f9f9;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to bottom, #dfecec, #f7f9f9);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2f4f4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* CONTACT BOX */
+#contact {
+  background: #eef5f5;
+  padding: 30px;
+  border-radius: 10px;
+}
