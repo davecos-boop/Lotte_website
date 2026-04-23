@@ -3,25 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <title>Om mig</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Forside</a>
-  <a href="about.html">Om mig</a>
-  <a href="services.html">Ydelser</a>
-  <a href="prices.html">Priser</a>
-  <a href="contact.html">Kontakt</a>
+<nav class="nav-minimal">
+  <div class="nav-left">
+    <img src="logo.png">
+    <strong>Lotte Sønderby</strong>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html">Forside</a>
+    <a href="about.html" class="active">Om mig</a>
+    <a href="services.html">Ydelser</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
 </nav>
 
-<section>
-  <h2>Om mig</h2>
-  <p>
-    Jeg er autoriseret psykolog med erfaring inden for behandling af stress, angst og depression.
-    Jeg arbejder med en nærværende og professionel tilgang, hvor fokus er på dine behov.
-  </p>
+<section class="two-column">
+
+  <!-- LEFT COLUMN -->
+  <div class="left-col">
+    <h2>Om mig</h2>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-col">
+
+    <div class="about-flex">
+
+      <!-- IMAGE -->
+      <div class="about-image">
+        <img src="psykolog1.JPG" alt="Lotte Sønderby">
+      </div>
+
+      <!-- TEXT -->
+      <div class="about-text">
+
+        <p><strong>Specialpsykolog i psykiatri med mange års erfaring.</strong></p>
+
+        <p>
+          Uddannet fra Århus Universitet i 2006. Specialpsykolog i psykiatri samt
+          specialist i psykoterapi og psykopatologi. Derudover supervisor i psykopatologi.
+        </p>
+
+        <p>
+          Mange års erfaring med arbejde med mennesker med psykiske og psykiatriske
+          vanskeligheder som angst, depression, traumer, psykoselidelser og stressreaktioner.
+        </p>
+
+        <p>
+          Bred erfaring med psykologiske undersøgelser og diagnostisk udredning,
+          herunder second opinion.
+        </p>
+
+        <p>
+          Særlig erfaring med komplekse problemstillinger og pårørende.
+        </p>
+
+        <p>
+          Efteruddannelse i kognitiv terapi, EMDR, narrativ traumeterapi m.m.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
+<footer class="footer-minimal">
+  © 2026 Lotte Sønderby
+</footer>
 
 </body>
 </html>
