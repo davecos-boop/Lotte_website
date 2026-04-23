@@ -284,5 +284,27 @@ body {
   /* FOOTER */
   .footer-minimal {
     padding: 30px 20px;
-  }
+  }/* ABOUT PAGE MOBILE FIX */
+.about-wrap {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+/* FIX LEFT SHIFT */
+.about-content {
+  max-width: 100%;
+}
+
+/* FIX IMAGE SIZE + ALIGNMENT */
+.about-content img {
+  float: none;              /* remove wrap on mobile */
+  display: block;
+  margin: 0 auto 20px auto; /* center image */
+  width: 180px;             /* slightly smaller */
+}
+
+/* IMPROVE TEXT ALIGNMENT */
+.about-content p {
+  text-align: left;
+}
 }
