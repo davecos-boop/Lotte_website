@@ -1,4 +1,4 @@
-/* RESET */
+/* ========= BASE ========= */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -7,7 +7,14 @@ body {
   line-height: 1.7;
 }
 
-/* NAV */
+/* Prevent images from breaking layouts */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========= NAV ========= */
 .nav-minimal {
   display: flex;
   justify-content: space-between;
@@ -30,7 +37,7 @@ body {
   text-decoration: underline;
 }
 
-/* LAYOUT */
+/* ========= LAYOUT ========= */
 .two-column {
   display: flex;
   gap: 80px;
@@ -45,7 +52,7 @@ body {
   flex: 2;
 }
 
-/* HERO */
+/* ========= HERO ========= */
 .hero-minimal {
   display: flex;
   justify-content: space-between;
@@ -75,7 +82,7 @@ body {
   border-radius: 4px;
 }
 
-/* ABOUT */
+/* ========= ABOUT ========= */
 .about-wrap {
   padding: 80px 60px;
 }
@@ -91,17 +98,19 @@ body {
   margin: 0 auto;
 }
 
+/* THIS FIXES YOUR PROBLEM */
 .about-image {
   float: left;
   margin: 0 30px 20px 0;
+  width: 220px; /* locks container */
 }
 
 .about-image img {
-  width: 220px;
+  width: 100%; /* fills container only */
   border-radius: 4px;
 }
 
-/* SERVICES */
+/* ========= SERVICES ========= */
 .content-minimal {
   max-width: 800px;
   margin: 0 auto;
@@ -123,12 +132,12 @@ body {
   color: #666;
 }
 
-/* CONTACT */
+/* ========= CONTACT ========= */
 .contact-info p {
   margin-bottom: 25px;
 }
 
-/* KLINIK SECTION (FIXED) */
+/* Klinikken layout */
 .klinikk-section {
   display: flex;
   align-items: flex-start;
@@ -137,13 +146,12 @@ body {
 }
 
 .klinikk-image {
+  width: 180px; /* LOCK width */
   flex-shrink: 0;
 }
 
 .klinikk-image img {
-  width: 180px;
-  height: auto;
-  display: block;
+  width: 100%;
   border-radius: 4px;
 }
 
@@ -151,7 +159,7 @@ body {
   max-width: 400px;
 }
 
-/* MAP */
+/* Map */
 .contact-image iframe {
   width: 100%;
   height: 250px;
@@ -160,14 +168,14 @@ body {
   margin-top: 30px;
 }
 
-/* FOOTER */
+/* ========= FOOTER ========= */
 .footer-minimal {
   padding: 40px 60px;
   font-size: 13px;
   color: #666;
 }
 
-/* MOBILE */
+/* ========= MOBILE ========= */
 @media (max-width: 768px) {
 
   .nav-minimal {
@@ -185,23 +193,19 @@ body {
     max-width: 320px;
   }
 
+  /* About mobile fix */
   .about-image {
     float: none;
-    margin: 0 0 20px 0;
-    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 220px;
   }
 
-  .about-image img {
-    width: 100%;
-    max-width: 250px;
-  }
-
+  /* Klinikken mobile */
   .klinikk-section {
     flex-direction: column;
   }
 
-  .klinikk-image img {
-    width: 100%;
-    max-width: 260px;
+  .klinikk-image {
+    width: 220px;
   }
 }
