@@ -1,6 +1,4 @@
-/* =========================
-   BASE
-========================= */
+/* RESET */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -9,22 +7,13 @@ body {
   line-height: 1.7;
 }
 
-
-/* =========================
-   NAV
-========================= */
+/* NAV */
 .nav-minimal {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 60px;
   font-size: 14px;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .nav-left img {
@@ -41,10 +30,22 @@ body {
   text-decoration: underline;
 }
 
+/* LAYOUT */
+.two-column {
+  display: flex;
+  gap: 80px;
+  padding: 80px 60px;
+}
 
-/* =========================
-   HERO
-========================= */
+.left-col {
+  flex: 1;
+}
+
+.right-col {
+  flex: 2;
+}
+
+/* HERO */
 .hero-minimal {
   display: flex;
   justify-content: space-between;
@@ -57,40 +58,16 @@ body {
   max-width: 500px;
 }
 
-.hero-name {
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.hero-line {
-  width: 100%;
-  height: 1px;
-  background: #222;
-  margin: 10px 0 20px 0;
-}
-
+.hero-name,
 .hero-text h1 {
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 
-.hero-services {
-  margin: 25px 0;
-}
-
-.hero-services p {
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-.link-button {
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-  padding-bottom: 3px;
-  color: #222;
+.hero-line {
+  height: 1px;
+  background: #222;
+  margin: 10px 0 20px 0;
 }
 
 .hero-image img {
@@ -98,228 +75,60 @@ body {
   border-radius: 4px;
 }
 
-
-/* =========================
-   LAYOUT
-========================= */
-.two-column {
-  display: flex;
-  gap: 80px;
-  padding: 80px 60px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.left-col {
-  flex: 1;
-}
-
-.right-col {
-  flex: 2;
-  max-width: 600px;
-}
-
-.left-col h2 {
-  text-align: center;
-  width: 100%;
-}
-
-
-/* =========================
-   ABOUT PAGE
-========================= */
+/* ABOUT */
 .about-wrap {
-  max-width: 900px;
-  margin: 0 auto;
   padding: 80px 60px;
 }
 
-.about-wrap h2 {
+.about-title {
   text-align: center;
+  font-size: 28px;
   margin-bottom: 40px;
 }
 
-.about-content img {
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-image {
   float: left;
-  width: 260px;
   margin: 0 30px 20px 0;
+}
+
+.about-image img {
+  width: 220px;
   border-radius: 4px;
 }
 
-.about-content p {
-  margin-bottom: 18px;
-}
-
-.about-content::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
-/* =========================
-   SERVICES PAGE
-========================= */
+/* SERVICES */
 .content-minimal {
   max-width: 800px;
   margin: 0 auto;
-  padding: 80px 60px;
-}
-
-.content-minimal h2 {
-  margin-bottom: 40px;
+  padding: 80px 20px;
 }
 
 .price-section {
-  margin-bottom: 50px;
-}
-
-.price-section h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .price-row {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
-  font-size: 15px;
+  margin-top: 10px;
 }
 
-.price-section p {
-  margin-bottom: 10px;
-  max-width: 600px;
-  color: #444;
+.price-note {
+  font-size: 14px;
+  color: #666;
 }
 
-.price-section:not(:last-child) {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 25px;
-}
-
-
-/* =========================
-   CONTACT PAGE
-========================= */
+/* CONTACT */
 .contact-info p {
   margin-bottom: 25px;
 }
 
-.contact-map {
-  margin-top: 30px;
-}
-
-.contact-map iframe {
-  width: 100%;
-  border-radius: 4px;
-}
-.contact-image img {
-  width: 200px;
-  display: block;
-  margin: 10px 0 25px 0;
-  border-radius: 4px;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.footer-minimal {
-  padding: 40px 60px;
-  font-size: 13px;
-  color: #666;
-}
-
-
-/* MOBILE – KEEP SAME STRUCTURE */
-@media (max-width: 768px) {
-
-  /* NAV */
-  .nav-minimal {
-    padding: 20px;
-  }
-
-  .nav-right a {
-    margin-left: 15px;
-    font-size: 13px;
-  }
-
-  /* HERO */
-  .hero-minimal {
-    padding: 60px 20px;
-    gap: 40px;
-  }
-
-  .hero-name,
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-image img {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  /* KEEP TWO COLUMN LOOK (don’t fully collapse) */
-  .two-column {
-    gap: 40px;
-    padding: 60px 20px;
-  }
-
-  .right-col {
-    max-width: 100%;
-  }
-
-  /* SERVICES */
-  .content-minimal {
-    padding: 60px 20px;
-  }
-
-  /* ABOUT IMAGE */
-  .about-content img {
-    width: 200px;
-    margin: 0 20px 15px 0;
-  }
-
-  /* MAP */
-  .contact-map iframe {
-    height: 220px;
-  }
-.klinikk-section {
-  flex-direction: column;
-}
-
-.klinikk-image img {
-  width: 100%;
-  max-width: 260px;
-}
-  /* FOOTER */
-  .footer-minimal {
-    padding: 30px 20px;
-  }/* ABOUT PAGE MOBILE FIX */
-.about-wrap {
-  padding: 40px 20px;
-  text-align: left;
-}
-
-/* FIX LEFT SHIFT */
-.about-content {
-  max-width: 100%;
-}
-
-/* FIX IMAGE SIZE + ALIGNMENT */
-.about-content img {
-  float: none;              /* remove wrap on mobile */
-  display: block;
-  margin: 0 auto 20px auto; /* center image */
-  width: 180px;             /* slightly smaller */
-}
-
-/* IMPROVE TEXT ALIGNMENT */
-.about-content p {
-  text-align: left;
-}
-}/* KLINIK SECTION SIDE-BY-SIDE */
+/* KLINIK SECTION (FIXED) */
 .klinikk-section {
   display: flex;
   align-items: flex-start;
@@ -327,11 +136,72 @@ body {
   margin-bottom: 30px;
 }
 
+.klinikk-image {
+  flex-shrink: 0;
+}
+
 .klinikk-image img {
   width: 180px;
+  height: auto;
+  display: block;
   border-radius: 4px;
 }
 
 .klinikk-text {
   max-width: 400px;
+}
+
+/* MAP */
+.contact-image iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+/* FOOTER */
+.footer-minimal {
+  padding: 40px 60px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .nav-minimal {
+    padding: 20px 30px;
+  }
+
+  .two-column,
+  .hero-minimal {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-image {
+    float: none;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .klinikk-section {
+    flex-direction: column;
+  }
+
+  .klinikk-image img {
+    width: 100%;
+    max-width: 260px;
+  }
 }
