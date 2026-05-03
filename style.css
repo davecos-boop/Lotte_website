@@ -208,4 +208,26 @@ img {
   .klinikk-image {
     width: 220px;
   }
+}/* FIX ABOUT IMAGE ONLY — SAFE PATCH */
+.profile-img {
+  max-width: 400px !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}/* ABOUT IMAGE — LEFT + TEXT WRAP (FINAL FIX) */
+.about-img {
+  float: left;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 25px 15px 0;
+  border-radius: 6px;
+}
+
+/* Clear float after text */
+.about-text::after {
+  content: "";
+  display: block;
+  clear: both;
 }
